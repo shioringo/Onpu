@@ -3,29 +3,9 @@ enchant();
 window.onload = function () {
 	var game = new Game(400, 500);  				//画面サイズを400*500にする。（このサイズだとスマホでも快適なのでおススメ）
 
-	//結果ツイート時にURLを貼るため、このゲームのURLをここに記入
-	var url = "https://twitter.com/hothukurou";
-	url = encodeURI(url); //きちんとURLがツイート画面に反映されるようにエンコードする
 	/////////////////////////////////////////////////
 	//ゲーム開始前に必要な画像・音を読み込む部分
 
-
-	//クリック音読み込み
-	var ClickSound = "Click.wav";						//game.htmlからの相対パス
-	game.preload([ClickSound]); 				//データを読み込んでおく
-
-	//ぞう山くん画像
-	var ZoyamaImg = "Zoyama.png";						//game.htmlからの相対パス
-	game.preload([ZoyamaImg]);					//データを読み込んでおく
-
-	//リトライボタン
-	var B_Retry = "Retry.png";						//game.htmlからの相対パス
-	game.preload([B_Retry]);					//データを読み込んでおく
-
-	//ツイートボタン
-	var B_Tweet = "Tweet.png";						//game.htmlからの相対パス
-	game.preload([B_Tweet]);					//データを読み込んでおく
-	
 	var note1 = "note1.png";
 	var note2 = "note2.png";
 	var note3 = "note3.png";
